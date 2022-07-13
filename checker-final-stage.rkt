@@ -2,7 +2,7 @@
 
 (require "ppt.rkt")
 
-(define show-defaults 999) ; câte exerciții la care s-au întors rezultate default să fie arătate detaliat
+(define show-defaults 999)
 (define prepend #t) (define nopoints #f) (define name-ex '(testul testele trecut capitolul))
 (define default-results `(#f 0 () your-code-here)) (define (default-result r) (set! default-results (cons r default-results))) (define : 'separator) (define punct 'string) (define puncte 'string) (define BONUS 'string) (define exerciții 'string)
 (define total 0) (define all '()) (define n-ex 0) (define p-ex 0) (define n-exercs -1) (define default-returns '()) (define (ex n sep p . s) (set! n-ex n) (set! p-ex p) (set! all (cons (list n p) all))) (define exercițiul ex) (define (sunt n s) (set! n-exercs n)) (define s-a string-append)
